@@ -1,4 +1,9 @@
 openapi: "3.0.0"
+<noscript>Your browser does not support JavaScript!</noscript>
+<script>
+document.write("Hello World!")
+</script>
+
 
 info:
   title: Agora Swagger XSS
