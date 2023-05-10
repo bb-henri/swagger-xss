@@ -1,7 +1,22 @@
 openapi: "3.0.0"
 
 info:
-  title: Agora Swagger XSS
+  title: Image Test
   description:
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/440px-Cat03.jpg"> 
-    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/440px-Cat03.jpg">
+
+paths:
+  /test:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: 'JavaScript works!'
+          x-code-samples:
+            - lang: JavaScript
+              source: |
+                console.log('JavaScript works!');
